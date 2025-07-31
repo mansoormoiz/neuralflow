@@ -85,10 +85,10 @@ const Chatbot: React.FC = () => {
       {/* Floating Button */}
       {!open && (
         <button
-          className="bg-gradient-to-br from-[#2D3047] to-[#419D78] text-white rounded-full shadow-xl p-4 hover:scale-105 transition-transform duration-200 focus:outline-none border border-white/20 backdrop-blur-md"
+          className="bg-gradient-to-br from-[#2D3047] to-[#1e3a8a] text-white rounded-full shadow-xl p-4 hover:scale-105 transition-transform duration-200 focus:outline-none border border-white/20 backdrop-blur-md"
           onClick={() => setOpen(true)}
           aria-label="Open chatbot"
-          style={{ boxShadow: "0 4px 24px 0 rgba(65,157,120,0.18)" }}
+          style={{ boxShadow: "0 4px 24px 0 rgba(30,58,138,0.18)" }}
         >
           <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.03 2 11c0 2.39 1.05 4.55 2.82 6.19L4 22l4.13-1.09C9.41 21.63 10.68 22 12 22c5.52 0 10-4.03 10-9s-4.48-9-10-9Zm0 16c-1.1 0-2.17-.18-3.17-.52l-.23-.08-.24.06-2.44.65.66-2.36.07-.25-.18-.19C4.21 14.01 3.25 12.57 3.25 11c0-3.87 3.86-7 8.75-7s8.75 3.13 8.75 7-3.86 7-8.75 7Z"/></svg>
         </button>
@@ -99,12 +99,12 @@ const Chatbot: React.FC = () => {
           style={{
             background: "rgba(45, 48, 71, 0.85)",
             backdropFilter: "blur(16px)",
-            boxShadow: "0 8px 32px 0 rgba(65,157,120,0.18)",
+            boxShadow: "0 8px 32px 0 rgba(30,58,138,0.18)",
             maxHeight: '80vh',
           }}
         >
           <div className="flex items-center justify-between px-3 py-2" style={{
-            background: "linear-gradient(90deg, #2D3047 60%, #419D78 100%)",
+            background: "linear-gradient(90deg, #2D3047 60%, #1e3a8a 100%)",
             color: "#fff"
           }}>
             <span className="font-semibold tracking-wide text-sm">Chatbot</span>
@@ -115,7 +115,7 @@ const Chatbot: React.FC = () => {
           <div className="flex-1 px-3 py-2 space-y-2 overflow-y-auto custom-scrollbar" style={{ maxHeight: 'calc(80vh - 160px)', background: "rgba(255,255,255,0.04)" }}>
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}>
-                <div className={`px-3 py-2 rounded-xl text-xs max-w-[80%] shadow ${msg.from === "user" ? "bg-gradient-to-br from-[#419D78]/90 to-[#2D3047]/90 text-white" : "bg-white/80 text-[#2D3047] border border-gray-200"}`}
+                <div className={`px-3 py-2 rounded-xl text-xs max-w-[80%] shadow ${msg.from === "user" ? "bg-gradient-to-br from-[#1e3a8a]/90 to-[#2D3047]/90 text-white" : "bg-white/80 text-[#2D3047] border border-gray-200"}`}
                   style={msg.from === "user" ? { fontWeight: 500 } : {}}>
                   {msg.text}
                 </div>
@@ -130,10 +130,10 @@ const Chatbot: React.FC = () => {
                 {FAQ_SECTIONS.map((section, idx) => (
                   <button
                     key={section.title}
-                    className="w-full text-left px-3 py-2 rounded-lg bg-gradient-to-br from-[#F7F7F7]/80 to-[#E6F4EF]/80 text-[#2D3047] font-semibold shadow-sm border border-[#419D78]/10 hover:bg-[#E6F4EF] hover:scale-[1.03] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#419D78] flex items-center gap-2 text-xs"
+                    className="w-full text-left px-3 py-2 rounded-lg bg-gradient-to-br from-[#F7F7F7]/80 to-[#EBF4FF]/80 text-[#2D3047] font-semibold shadow-sm border border-[#1e3a8a]/10 hover:bg-[#EBF4FF] hover:scale-[1.03] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1e3a8a] flex items-center gap-2 text-xs"
                     onClick={() => handleSectionClick(idx)}
                   >
-                    <span className="inline-block w-2 h-2 rounded-full bg-[#419D78] opacity-70"></span>
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#1e3a8a] opacity-70"></span>
                     {section.title}
                   </button>
                 ))}
@@ -142,16 +142,16 @@ const Chatbot: React.FC = () => {
             {(activeSection || activeSection === 0) && (
               <div className="space-y-2">
                 <button
-                  className="mb-2 text-xs text-[#419D78] font-semibold flex items-center gap-1 hover:underline focus:outline-none"
+                  className="mb-2 text-xs text-white font-semibold flex items-center gap-1 hover:underline focus:outline-none"
                   onClick={handleBack}
                 >
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path fill="#419D78" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path fill="#1e3a8a" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
                   Back to sections
                 </button>
                 {FAQ_SECTIONS[activeSection].faqs.map((faq) => (
                   <button
                     key={faq.question}
-                    className="w-full text-left px-3 py-2 rounded-lg bg-gradient-to-br from-[#F7F7F7]/80 to-[#E6F4EF]/80 text-[#2D3047] font-medium shadow-sm border border-[#419D78]/10 hover:bg-[#E6F4EF] hover:scale-[1.03] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#419D78] text-xs"
+                    className="w-full text-left px-3 py-2 rounded-lg bg-gradient-to-br from-[#F7F7F7]/80 to-[#EBF4FF]/80 text-[#2D3047] font-medium shadow-sm border border-[#1e3a8a]/10 hover:bg-[#EBF4FF] hover:scale-[1.03] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1e3a8a] text-xs"
                     onClick={() => handleQuestionClick(faq.question, faq.answer)}
                   >
                     {faq.question}
@@ -172,7 +172,7 @@ const Chatbot: React.FC = () => {
         }
         .custom-scrollbar {
           scrollbar-width: thin;
-          scrollbar-color: #419D78 rgba(45,48,71,0.12);
+          scrollbar-color: #1e3a8a rgba(45,48,71,0.12);
         }
         .custom-scrollbar::-webkit-scrollbar {
           width: 8px;

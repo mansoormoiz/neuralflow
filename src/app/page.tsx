@@ -20,6 +20,10 @@ import { Dialog } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import HomeLaptopCard from './components/HomeLaptopCard';
 import { AnimatePresence } from 'framer-motion';
+console.log({
+  CodeBracketIcon, CpuChipIcon, PaintBrushIcon, SparklesIcon, 
+  UserGroupIcon, RocketLaunchIcon, CommandLineIcon, BeakerIcon
+});
 
 const stats = [
   { number: '37+', label: 'Projects Completed' },
@@ -189,7 +193,7 @@ function getCardColor(service: Service) {
   const colors: {[key: string]: string} = {
     'Web Development': 'blue',
     'AI Integration': 'purple',
-    'Workflow Automation': 'green',
+    'Workflow Automation': 'blue',
     'Branding': 'orange'
   };
   return colors[service.title] || "gray";
@@ -503,8 +507,8 @@ export default function Home() {
               </div>
               {/* CTA button with green color scheme */}
               <button
-                className="mt-6 sm:mt-8 px-6 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-base sm:text-lg mx-auto block"
-                style={{ background: 'linear-gradient(to right, #419D78, #34d399)' }}
+                className="mt-6 sm:mt-8 px-6 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-base sm:text-lg mx-auto block"
+      style={{ background: 'linear-gradient(to right, #1e3a8a, #1e40af)' }}
                 onClick={() => {
                   const contactSection = document.getElementById('contact');
                   if (contactSection) {
@@ -1560,91 +1564,91 @@ export default function Home() {
         </div>
         {/* Animated Radial Gradient Overlay */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <div className="absolute left-1/2 top-1/2 w-[400px] sm:w-[900px] h-[400px] sm:h-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-200 via-white/0 to-transparent opacity-40 animate-radialfade" />
+          <div className="absolute left-1/2 top-1/2 w-[400px] sm:w-[900px] h-[400px] sm:h-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-200 via-white/0 to-transparent opacity-40 animate-radialfade" />
         </div>
         {/* Glowing Blobs */}
         <div className="absolute z-0 pointer-events-none select-none">
           <div className="absolute top-12 sm:top-24 left-4 sm:left-12 w-36 sm:w-72 h-36 sm:h-72 bg-emerald-300 opacity-30 rounded-full blur-2xl sm:blur-3xl animate-blob1" />
           <div className="absolute bottom-16 sm:bottom-32 right-8 sm:right-24 w-40 sm:w-80 h-40 sm:h-80 bg-indigo-300 opacity-20 rounded-full blur-2xl sm:blur-3xl animate-blob2" />
-          <div className="absolute top-1/2 right-1/4 sm:right-1/3 w-28 sm:w-60 h-28 sm:h-60 bg-green-400 opacity-20 rounded-full blur-xl sm:blur-2xl animate-blob3" />
+          <div className="absolute top-1/2 right-1/4 sm:right-1/3 w-28 sm:w-60 h-28 sm:h-60 bg-blue-400 opacity-20 rounded-full blur-xl sm:blur-2xl animate-blob3" />
         </div>
         {/* Premium Glass Card Contact Section */}
-        <div className="relative z-10 w-full max-w-lg sm:max-w-3xl mx-auto rounded-2xl sm:rounded-4xl overflow-hidden bg-white/80 backdrop-blur-xl shadow-2xl border-2 border-green-200 bg-clip-padding p-0 flex flex-col md:flex-row items-stretch group transition-transform duration-300 hover:scale-[1.025] hover:shadow-green-200/80 hover:shadow-2xl" style={{ boxShadow: '0 8px 40px 0 rgba(34,197,94,0.18)' }}>
+        <div className="relative z-10 w-full max-w-lg sm:max-w-3xl mx-auto rounded-2xl sm:rounded-4xl overflow-hidden bg-white/80 backdrop-blur-xl shadow-2xl border-2 border-blue-200 bg-clip-padding p-0 flex flex-col md:flex-row items-stretch group transition-transform duration-300 hover:scale-[1.025] hover:shadow-blue-200/80 hover:shadow-2xl" style={{ boxShadow: '0 8px 40px 0 rgba(30,58,138,0.18)' }}>
           {/* Contact Info */}
           <div className="flex-1 flex flex-col justify-center items-start gap-6 sm:gap-8 p-6 sm:p-12">
-            <span className="inline-block mb-4 px-8 py-3 bg-gradient-to-r from-green-400 to-emerald-500 text-white text-2xl font-extrabold rounded-full shadow-lg animate-bounce-slow tracking-wide">Let's Connect</span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-green-700 mb-2 tracking-tight font-[Poppins,Inter,sans-serif] animate-fadein">Contact Us</h2>
+            <span className="inline-block mb-4 px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-2xl font-extrabold rounded-full shadow-lg animate-bounce-slow tracking-wide">Let's Connect</span>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-blue-700 mb-2 tracking-tight font-[Poppins,Inter,sans-serif] animate-fadein">Contact Us</h2>
             <div className="space-y-4 sm:space-y-5 text-base sm:text-lg">
               <div className="flex items-center gap-4 group/contact-icon">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-green-200 to-emerald-100 border border-green-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:rotate-6">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-200 to-blue-100 border border-blue-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:rotate-6">
                   {/* Gmail Icon with gradient */}
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <linearGradient id="gmail-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#34d399" />
-                        <stop offset="1" stopColor="#10b981" />
+                        <stop stopColor="#1e3a8a" />
+                        <stop offset="1" stopColor="#1e40af" />
                       </linearGradient>
                     </defs>
                     <rect x="4" y="6" width="16" height="12" rx="2" stroke="url(#gmail-gradient)" strokeWidth="2" fill="none"/>
                     <path d="M4 6l8 7 8-7" stroke="url(#gmail-gradient)" strokeWidth="2" fill="none"/>
                   </svg>
                 </span>
-                <a href="mailto:mansoor@neuralflow.services" className="hover:underline hover:text-green-700 transition font-semibold">mansoor@neuralflow.services</a>
+                <a href="mailto:mansoor@neuralflow.services" className="hover:underline hover:text-blue-700 transition font-semibold">mansoor@neuralflow.services</a>
               </div>
               <div className="flex items-center gap-4 group/contact-icon">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-green-200 to-emerald-100 border border-green-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:-rotate-6">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-200 to-blue-100 border border-blue-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:-rotate-6">
                   {/* Phone Icon with gradient */}
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <linearGradient id="phone-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#34d399" />
-                        <stop offset="1" stopColor="#10b981" />
+                        <stop stopColor="#1e3a8a" />
+                        <stop offset="1" stopColor="#1e40af" />
                       </linearGradient>
                     </defs>
                     <path d="M3 5.75a2 2 0 0 1 2-2h2.2a2 2 0 0 1 2 1.7l.3 2a2 2 0 0 1-.55 1.8l-1.1 1.1a16 16 0 0 0 7.1 7.1l1.1-1.1a2 2 0 0 1 1.8-.55l2 0.3a2 2 0 0 1 1.7 2v2.2a2 2 0 0 1-2 2A17 17 0 0 1 3 5.75z" stroke="url(#phone-gradient)" strokeWidth="2" fill="none"/>
                   </svg>
                 </span>
-                <a href="tel:+923357555253" className="hover:underline hover:text-green-700 transition font-semibold">+923357555253</a>
+                <a href="tel:+923357555253" className="hover:underline hover:text-blue-700 transition font-semibold">+923357555253</a>
               </div>
               <div className="flex items-center gap-4 group/contact-icon">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-green-200 to-emerald-100 border border-green-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:rotate-3">
+                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-200 to-blue-100 border border-blue-300 shadow-md transition-transform duration-300 group-hover/contact-icon:scale-110 group-hover/contact-icon:rotate-3">
                   {/* Instagram Icon with gradient */}
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#34d399" />
-                        <stop offset="1" stopColor="#10b981" />
+                        <stop stopColor="#1e3a8a" />
+                        <stop offset="1" stopColor="#1e40af" />
                       </linearGradient>
                     </defs>
                     <rect x="4" y="4" width="16" height="16" rx="5" stroke="url(#ig-gradient)" strokeWidth="2" fill="none"/>
                     <circle cx="12" cy="12" r="4" stroke="url(#ig-gradient)" strokeWidth="2" fill="none"/>
-                    <circle cx="17" cy="7" r="1.2" fill="#34d399" />
+                    <circle cx="17" cy="7" r="1.2" fill="#1e3a8a" />
                   </svg>
                 </span>
-                <a href="https://instagram.com/neuralflow.services" target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-green-700 transition font-semibold">neuralflow.services</a>
+                <a href="https://instagram.com/neuralflow.services" target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-blue-700 transition font-semibold">neuralflow.services</a>
               </div>
             </div>
-            <div className="mt-2 sm:mt-4 text-green-900/70 text-sm sm:text-base italic">We usually respond within 24 hours.</div>
+            <div className="mt-2 sm:mt-4 text-blue-900/70 text-sm sm:text-base italic">We usually respond within 24 hours.</div>
           </div>
           {/* Divider */}
-          <div className="hidden md:block w-px bg-gradient-to-b from-green-200 via-green-300 to-emerald-200 my-8 mx-0" />
+          <div className="hidden md:block w-px bg-gradient-to-b from-blue-200 via-blue-300 to-blue-200 my-8 mx-0" />
           {/* Contact Form */}
           <form className="flex-1 flex flex-col gap-4 sm:gap-6 p-6 sm:p-12 animate-fadein" autoComplete="off" onSubmit={handleContactSubmit}>
-            <label className="font-semibold text-green-900 text-base sm:text-lg">Name
-              <input id="name" name="name" type="text" required className="mt-2 w-full rounded-xl border border-green-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-400 text-green-900 placeholder:text-green-300" placeholder="Your Name" />
+            <label className="font-semibold text-blue-900 text-base sm:text-lg">Name
+              <input id="name" name="name" type="text" required className="mt-2 w-full rounded-xl border border-blue-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder:text-blue-300" placeholder="Your Name" />
             </label>
-            <label className="font-semibold text-green-900 text-base sm:text-lg">Email
-              <input id="email" name="email" type="email" required className="mt-2 w-full rounded-xl border border-green-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-400 text-green-900 placeholder:text-green-300" placeholder="you@email.com" />
+            <label className="font-semibold text-blue-900 text-base sm:text-lg">Email
+              <input id="email" name="email" type="email" required className="mt-2 w-full rounded-xl border border-blue-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder:text-blue-300" placeholder="you@email.com" />
             </label>
-            <label className="font-semibold text-green-900 text-base sm:text-lg">Message
-              <textarea id="message" name="message" rows={5} required className="mt-2 w-full rounded-xl border border-green-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-400 text-green-900 placeholder:text-green-300 resize-none" placeholder="How can we help you?" />
+            <label className="font-semibold text-blue-900 text-base sm:text-lg">Message
+              <textarea id="message" name="message" rows={5} required className="mt-2 w-full rounded-xl border border-blue-200 px-4 py-2 sm:py-3 bg-white/80 focus:outline-none focus:ring-2 focus:ring-blue-400 text-blue-900 placeholder:text-blue-300 resize-none" placeholder="How can we help you?" />
             </label>
-            <button type="submit" className="mt-2 sm:mt-4 py-2 sm:py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-base sm:text-lg shadow">Send Message</button>
+            <button type="submit" className="mt-2 sm:mt-4 py-2 sm:py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-base sm:text-lg shadow">Send Message</button>
           </form>
         </div>
         {/* Success Toast */}
         {contactFormStatus === 'success' && (
-          <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-green-400 to-emerald-500 text-white px-6 py-3 rounded-2xl shadow-lg flex items-center gap-3 animate-toast-in">
+          <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-2xl shadow-lg flex items-center gap-3 animate-toast-in">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
             <span className="font-semibold">Message sent! We'll be in touch soon.</span>
           </div>
@@ -1658,7 +1662,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-gradient-to-br from-gray-100 to-gray-200 border-t border-green-200/40 shadow-inner mt-8">
+              <footer className="w-full bg-gradient-to-br from-gray-100 to-gray-200 border-t border-blue-200/40 shadow-inner mt-8">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col items-center gap-4">
           {/* Copyright */}
           <div className="text-gray-600 text-sm text-center">
@@ -1666,14 +1670,14 @@ export default function Home() {
           </div>
           {/* Navigation */}
           <nav className="flex flex-wrap gap-4 justify-center">
-            <a href="#home" className="text-gray-700 hover:text-green-600 font-medium transition">Home</a>
-            <a href="#about" className="text-gray-700 hover:text-green-600 font-medium transition">About</a>
-            <a href="#services" className="text-gray-700 hover:text-green-600 font-medium transition">Services</a>
-            <a href="#portfolio" className="text-gray-700 hover:text-green-600 font-medium transition">Portfolio</a>
-            <a href="#pricing-calculator" className="text-gray-700 hover:text-green-600 font-medium transition">Pricing</a>
-            <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium transition">Contact</a>
-            <a href="#" className="text-gray-400 hover:text-green-600 font-medium transition">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-green-600 font-medium transition">Terms</a>
+            <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+            <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition">About</a>
+            <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+            <a href="#portfolio" className="text-gray-700 hover:text-blue-600 font-medium transition">Portfolio</a>
+            <a href="#pricing-calculator" className="text-gray-700 hover:text-blue-600 font-medium transition">Pricing</a>
+            <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+            <a href="#" className="text-gray-400 hover:text-blue-600 font-medium transition">Privacy Policy</a>
+            <a href="#" className="text-gray-400 hover:text-blue-600 font-medium transition">Terms</a>
           </nav>
         </div>
       </footer>
