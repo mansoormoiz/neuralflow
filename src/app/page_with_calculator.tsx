@@ -1598,29 +1598,29 @@ function PricingCalculator() {
 
   const services = {
     "Web Development": {
-      "Basic Website": { price: 400, description: "Simple responsive website" },
-      "E-commerce Site": { price: 750, description: "Full online store with payment" },
-      "Custom Web App": { price: 800, description: "Complex web application" },
-      "Website design": { price: 100, description: "RESTful API services" },
-      "Monthly Maintenance": { price: 25, description: "Monthly maintenance" }
+      "Basic Website": { price: 100, description: "Simple responsive website" },
+      "E-commerce Site": { price: 350, description: "Full online store with payment" },
+      "Custom Web App": { price: 500, description: "Complex web application" },
+      "Website design": { price: 50, description: "RESTful API services" },
+      "Monthly Maintenance": { price: 15, description: "Monthly maintenance" }
     },
     "Mobile Development": {
-      "iOS App": { price: 2500, description: "Native iOS application" },
-      "Android App": { price: 2500, description: "Native Android application" },
-      "Cross-platform App": { price: 3500, description: "React Native/Flutter app" },
-      "App Maintenance": { price: 300, description: "Monthly app maintenance" }
+      "iOS App": { price: 850, description: "Native iOS application" },
+      "Android App": { price: 750, description: "Native Android application" },
+      "Cross-platform App": { price: 900, description: "React Native/Flutter app" },
+      "App Maintenance": { price: 100, description: "Monthly app maintenance" }
     },
     "AI & Machine Learning": {
-      "AI Chatbot": { price: 1200, description: "Intelligent chatbot system" },
-      "Data Analysis": { price: 800, description: "Advanced data analytics" },
-      "ML Model Development": { price: 2000, description: "Custom ML models" },
-      "AI Integration": { price: 1500, description: "AI into existing systems" }
+      "AI Chatbot": { price: 80, description: "Intelligent chatbot system" },
+      "Data Analysis": { price: 50, description: "Advanced data analytics" },
+      "ML Model Development": { price: 850, description: "Custom ML models" },
+      "AI Integration": { price: 75, description: "AI into existing systems" }
     },
     "Design & Branding": {
-      "Logo Design": { price: 300, description: "Professional logo creation" },
-      "UI/UX Design": { price: 800, description: "User interface design" },
-      "Brand Identity": { price: 600, description: "Complete brand package" },
-      "Marketing Materials": { price: 400, description: "Brochures, flyers, etc." }
+      "Logo Design": { price: 20, description: "Professional logo creation" },
+      "UI/UX Design": { price: 50, description: "User interface design" },
+      "Brand Identity": { price: 100, description: "Complete brand package" },
+      "Marketing Materials": { price: 100, description: "Brochures, flyers, etc." }
     }
   };
 
